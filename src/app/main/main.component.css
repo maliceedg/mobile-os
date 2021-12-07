@@ -1,0 +1,35 @@
+.background-img {
+    background: url("src/assets/img/bg-1.jpg");
+    width: 100vw;
+    height: 87vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.clock {
+    color: white;
+    text-shadow: 1px 1px 2px #00000077;
+    font-size: 6em;
+    top: 20%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.apps {
+    position: relative;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.app-button {
+    height: 70px;
+    position: relative;
+    top: 80%;
+}
+
+.app-button>img {
+    height: 65px;
+}

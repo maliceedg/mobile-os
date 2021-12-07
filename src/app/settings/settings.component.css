@@ -1,0 +1,22 @@
+.container {
+    height: 87%;
+    width: 100%;
+}
+
+.setting-group {
+    display: flex;
+    height: 25px;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+
+.setting-label {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+mat-divider {
+    margin: auto;
+    width: 90%;
+}

@@ -1,0 +1,53 @@
+<div class="container">
+    <div class="setting-group">
+        <h2>Procesos</h2>
+    </div>
+    <div class="setting-group">
+        <div class="setting-label">
+            Calculadora
+            <mat-progress-bar mode="determinate" value="{{barValue-5}}" style="align-self: center;"></mat-progress-bar>
+        </div>
+        <button (click)="clear()" mat-icon-button color="primary">
+            <mat-icon>close</mat-icon>
+        </button>
+    </div>
+    <div class="setting-group">
+        <div class="setting-label">
+            Cámara
+            <mat-progress-bar mode="determinate" value="{{barValue}}" style="align-self: center;"></mat-progress-bar>
+        </div>
+        <button (click)="clear()" mat-icon-button color="primary">
+            <mat-icon>close</mat-icon>
+        </button>
+    </div>
+    <div class="setting-group">
+        <div class="setting-label">
+            Ajustes
+            <mat-progress-bar mode="determinate" value="{{barValue+15}}" style="align-self: center;"></mat-progress-bar>
+        </div>
+        <button (click)="clear()" mat-icon-button color="primary">
+            <mat-icon>close</mat-icon>
+        </button>
+    </div>
+    <div class="setting-group">
+        <div class="setting-label">
+            Galería
+            <mat-progress-bar mode="determinate" value="{{barValue+3}}" style="align-self: center;"></mat-progress-bar>
+        </div>
+        <button (click)="clear()" mat-icon-button color="primary">
+            <mat-icon>close</mat-icon>
+        </button>
+    </div>
+    <div class="setting-group" style="margin-top: 20px;">
+        <h3>Wifi</h3>
+        <mat-slide-toggle [(ngModel)]="isChecked" (change)="toggle($event)" [color]="color" [checked]="checked" [disabled]="disabled">
+        </mat-slide-toggle>
+    </div>
+    <mat-divider></mat-divider>
+    <div class="setting-group">
+        <h3>Ubicación</h3>
+        <mat-slide-toggle (change)="toggle($event)" [color]="color" [checked]="checked" [disabled]="disabled">
+        </mat-slide-toggle>
+    </div>
+    <mat-divider></mat-divider>
+</div>

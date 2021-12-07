@@ -1,0 +1,19 @@
+<div class="background-img">
+    <div class="clock">
+        {{ $time | async | date: 'hh:mm a' }}
+    </div>
+    <div class="apps">
+        <a routerLink="/calculator" class="app-button">
+            <img src="../../assets/img/calculator.png" alt="Calculator" srcset="">
+        </a>
+        <a routerLink="/camera" class="app-button">
+            <img src="../../assets/img/photo.png" alt="Camera" srcset="">
+        </a>
+        <a routerLink="/gallery" class="app-button">
+            <img src="../../assets/img/gallery.png" alt="gallery" srcset="">
+        </a>
+        <a routerLink="/settings" class="app-button">
+            <img src="../../assets/img/settings.png" alt="Settings" srcset="">
+        </a>
+    </div>
+</div>

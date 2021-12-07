@@ -1,0 +1,15 @@
+<mat-toolbar color="primary">
+    <span>Mobile OS</span>
+    <span class="spacer"></span>
+    <button *ngIf="wifi" (click)="countDown()" mat-icon-button class="example-icon" aria-label="wifi icon">
+            <mat-icon>wifi</mat-icon>
+        </button>
+    <div>
+        <button *ngIf="!wifi" mat-icon-button disabled class="example-icon" aria-label="wifi off icon">
+                <mat-icon>wifi_off</mat-icon>
+            </button>
+    </div>
+    <button mat-icon-button class="example-icon favorite-icon" aria-label="battery">
+        {{battery}}%<mat-icon>battery_full</mat-icon>
+      </button>
+</mat-toolbar>

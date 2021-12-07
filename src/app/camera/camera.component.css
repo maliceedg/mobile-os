@@ -1,0 +1,9 @@
+.video {
+    height: 87%;
+    width: 100%;
+}
+
+.video>img {
+    height: 100%;
+    width: 100%;
+}
